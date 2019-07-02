@@ -14,7 +14,7 @@ exports.config = {
     build: 'Product Demo for Dan',
     "browserstack.networkLogs": true,
     "browserstack.debug" : true,
-    "browserstack.geoLocation" : "DE",
+    "browserstack.geoLocation" : "FR",
     "browserstack.timezone" : "New_York"
   },
 
