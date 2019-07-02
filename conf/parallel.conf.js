@@ -11,7 +11,11 @@ exports.config = {
   maxInstances: 10,
   commonCapabilities: {
     name: 'parallel_test',
-    build: 'webdriver-browserstack'
+    build: 'Product Demo for Dan',
+    "browserstack.networkLogs": true,
+    "browserstack.debug" : true,
+    "browserstack.geoLocation" : "DE",
+    "browserstack.timezone" : "New_York"
   },
 
   capabilities: [{
@@ -19,9 +23,11 @@ exports.config = {
   },{
     browser: 'firefox'
   },{
-    browser: 'internet explorer'
+    device : 'iPhone X',
+    real_mobile : true,
   },{
-    browser: 'safari'
+    device : 'Samsung Galaxy S9 Plus',
+    real_mobile : true,
   }],
 
   logLevel: 'warn',
